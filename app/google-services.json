@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:680507748513:android:3131771f5f46326f",
         "android_client_info": {
-          "package_name": "com.example.vinutna.tripplanner"
+          "package_name": "com.example.Lata.tripplanner"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "680507748513-i96d2bdbsdhviipchqr9flv5hophd0h5.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.vinutna.tripplanner",
+            "package_name": "com.example.Lata.tripplanner",
             "certificate_hash": "59264245dd37b297b0001cdf85939be57cb0f003"
           }
         },
