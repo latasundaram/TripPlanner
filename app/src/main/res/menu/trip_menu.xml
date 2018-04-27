@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/searchAddPlaces"
+        android:title="@string/searchAddplace"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/viewPlaces"
+        android:title="@string/viewplaces"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/viewRoute"
+        android:title="@string/viewroute"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/Logout"
+        android:title="@string/log_out"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_exit_to_app_white_24dp"
+        />
+</menu>

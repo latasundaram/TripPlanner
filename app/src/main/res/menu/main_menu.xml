@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/Profile"
+        android:title="@string/view_update_profile"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/Requests"
+        android:title="@string/friend_requests"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/FriendList"
+        android:title="@string/friends_list"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/DiscoverFriends"
+        android:title="@string/discoverfriends"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/Logout"
+        android:title="@string/log_out"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_exit_to_app_white_24dp"
+        />
+
+</menu>

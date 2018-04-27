@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_trip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lata.tripplanner.AddTripActivity">
+
+    <TextView
+        android:text="@string/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/label"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="41dp"
+        android:id="@+id/tripcoverim" />
+
+    <Button
+        android:text="@string/trippic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tripcoverim"
+        android:layout_toRightOf="@+id/tripcoverim"
+        android:layout_toEndOf="@+id/tripcoverim"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:id="@+id/trippicbtn"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/triptitletext"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/title"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignLeft="@+id/trippicbtn"
+        android:layout_alignStart="@+id/trippicbtn" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/triptitletext"
+        android:layout_alignLeft="@+id/triptitletext"
+        android:layout_alignStart="@+id/triptitletext"
+        android:id="@+id/triploctext"
+        android:textSize="14sp" />
+
+    <TextView
+        android:text="@string/loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:layout_alignBaseline="@+id/triploctext"
+        android:layout_alignBottom="@+id/triploctext"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title" />
+
+    <Button
+        android:text="@string/addmem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addmembtn"
+        android:textAllCaps="false"
+        android:layout_below="@+id/triploctext"
+        android:layout_toRightOf="@+id/tripcoverim"
+        android:layout_toEndOf="@+id/tripcoverim"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:text="@string/createtrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createtripbtn"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addmembtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/createtripbtn"
+        android:id="@+id/memberListView" />
+
+    <TextView
+        android:text="@string/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/title"
+        android:layout_below="@+id/tripcoverim"
+        android:layout_alignLeft="@+id/tripcoverim"
+        android:layout_alignStart="@+id/tripcoverim" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/trippicbtn"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignEnd="@+id/title"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/progressBarImgTrip" />
+
+</RelativeLayout>

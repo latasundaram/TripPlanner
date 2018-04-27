@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lata.tripplanner.ProfileActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/fnameedit"
+        android:layout_alignLeft="@+id/fnameedit"
+        android:layout_alignStart="@+id/fnameedit"
+        android:layout_marginTop="13dp"
+        android:id="@+id/lnametext"
+        android:textSize="14sp" />
+
+    <TextView
+        android:text="@string/pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:layout_marginTop="31dp"
+        android:id="@+id/pwd" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/emailtext"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignBottom="@+id/email"
+        android:layout_alignLeft="@+id/lnametext"
+        android:layout_alignStart="@+id/lnametext"
+        android:textSize="14sp"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:text="@string/repwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwdtext"
+        android:layout_alignLeft="@+id/fname"
+        android:layout_alignStart="@+id/fname"
+        android:layout_marginTop="25dp"
+        android:id="@+id/reEnterpwd" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/fnameedit"
+        android:textSize="14sp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_alignBaseline="@+id/fname"
+        android:layout_alignBottom="@+id/fname"
+        android:layout_toRightOf="@+id/reEnterpwd"
+        android:layout_toEndOf="@+id/reEnterpwd" />
+
+    <TextView
+        android:text="@string/lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lname"
+        android:layout_alignBaseline="@+id/lnametext"
+        android:layout_alignBottom="@+id/lnametext"
+        android:layout_alignRight="@+id/fname"
+        android:layout_alignEnd="@+id/fname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/pwdtext"
+        android:layout_alignLeft="@+id/pwdtext"
+        android:layout_alignStart="@+id/pwdtext"
+        android:layout_marginTop="14dp"
+        android:id="@+id/repwdtext"
+        android:textSize="14sp" />
+
+    <TextView
+        android:text="@string/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/gender"
+        android:layout_alignLeft="@+id/reEnterpwd"
+        android:layout_alignStart="@+id/reEnterpwd" />
+
+    <TextView
+        android:text="@string/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender"
+        android:layout_below="@+id/lnametext"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:text="@string/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="115dp"
+        android:id="@+id/fname"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/fnameedit"
+        android:layout_alignLeft="@+id/lname"
+        android:layout_alignStart="@+id/lname"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/profileicon"/>
+
+    <Button
+        android:text="@string/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelbtn"
+        android:layout_below="@+id/repwdtext"
+        android:layout_alignRight="@+id/reEnterpwd"
+        android:layout_alignEnd="@+id/reEnterpwd"
+        android:layout_marginTop="19dp"
+        android:textAllCaps="false" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/genderrg"
+        android:layout_below="@+id/lnametext"
+        android:layout_alignLeft="@+id/lnametext"
+        android:layout_alignStart="@+id/lnametext"
+        android:checkedButton="@+id/male">
+
+        <RadioButton
+            android:text="@string/maleg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="@string/femaleg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/browse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/browse"
+        android:layout_alignBottom="@+id/profileicon"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/gallery"
+        android:id="@+id/browsebtn"
+        android:scaleType="fitXY"
+        android:layout_alignBottom="@+id/browse"
+        android:layout_toRightOf="@+id/browse"
+        android:layout_toEndOf="@+id/browse"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pwdtext"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/pwd"
+        android:layout_alignBottom="@+id/pwd"
+        android:layout_alignLeft="@+id/signupbtn"
+        android:layout_alignStart="@+id/signupbtn" />
+
+    <Button
+        android:text="@string/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupbtn"
+        android:textAllCaps="false"
+        android:layout_alignBaseline="@+id/cancelbtn"
+        android:layout_alignBottom="@+id/cancelbtn"
+        android:layout_alignRight="@+id/browsebtn"
+        android:layout_alignEnd="@+id/browsebtn" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarimg"
+        android:layout_alignTop="@+id/browse"
+        android:layout_toLeftOf="@+id/cancelbtn"
+        android:layout_toStartOf="@+id/cancelbtn" />
+
+</RelativeLayout>

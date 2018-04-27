@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_person_black_24dp"
+        android:id="@+id/pendingIcon"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pendingName"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_dark" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:text="@string/Accept"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/pendingAccept"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center" />
+
+            <Button
+                android:text="@string/Reject"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/pendingReject"
+                android:layout_marginLeft="20dp"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
